@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Validando Formulários com Javascript</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> <script language="javascript" type="text/javascript">
+function validar() {
+var nome = form1.nome.value
+var email = form1.email.value;
+varsenha = form1.senha.value;
+var rep_senha = form1.rep_senha.value;
+if (name == "") {
+alert("Preencha o campo com seu nome"); form 1.name.focus();
+return false;
+}
+if (email == "") {
+alert("Preencha o campo com seu email"); form 1.email.focus();
+return false;
+}
+if (senha == "") {
+alert("Preencha o campo com sua senha"); form1.senha.focus();
+return false;
+}
+if (rep_senha == ""){ alert("Repita sua senha); form1.rep senha.focus(); return false;
+}
+if (name.length <5} {
+alert("Digite seu nome completo); form 1.name.focus();
+retum false;
+}
+if (senha != rep_senha) {
+alert("Senhas diferentes );
+form1.senha.focus();
+return false;
+}
+</script>
+</head>
+<center> <h1>Validação com Javascript </h1> </center><br><br><br>
+<body>
+<form name="form1" action="frmAviso.html" method="post"> <!-- INICIO DO FORMULARIO para o javascript é preciso que a form tenha nome aqui como form1--> Nome: <input name="nome" type="text"><br/><br/>
+Email: <input name="email" type="text"> <br /> <br/>
+Senha: <input name="senha" type="password"><br/><br/>
+<textarea rows="20" cols="30"></textarea> <br> Comentario: 
+<input type="submit" onclick="retum validar()">
+<input type="reset" name="limpa" value="Limpar">
+</form> <!--FIM DO FORMULARIO -->
+</body>
+</html>
